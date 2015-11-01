@@ -70,24 +70,26 @@ body {
    =================== */
 
 .header-container {
-    border-bottom: 20px solid #e44d26;
+    background-image: url("https://s3.amazonaws.com/media.launchrock.com/assets/sites/site-3vvlvg1syaybyyo1zsseay6yg/rfgfxp-landingp1-06.png");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    opacity: 1;
+    background-position-x: 50%;   
 }
 
-.footer-container,
-.main aside {
-    border-top: 20px solid #e44d26;
-}
-
-.header-container,
-.footer-container,
-.main aside {
-    background: #f16529;
-}
-
-.title {
+.header-container .wrapper {
     color: white;
 }
 
+.header-container .wrapper h1,
+.header-container .wrapper h2 {
+    width: 100%;
+}
+
+.header-container .wrapper h3 {
+    width: 55%;
+}
 /* ==============
     MOBILE: Menu
    ============== */
