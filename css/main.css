@@ -1,4 +1,5 @@
 /*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+@import url(https://fonts.googleapis.com/css?family=Cabin:700,400);
 
 html {
     color: #222;
@@ -70,56 +71,27 @@ body {
    =================== */
 
 .header-container {
-    background-image: url("https://s3.amazonaws.com/media.launchrock.com/assets/sites/site-3vvlvg1syaybyyo1zsseay6yg/rfgfxp-landingp1-06.png");
+    background-image: url(header.jpg);
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
     opacity: 1;
-    background-position-x: 50%;   
+    background-position-x: 50%;
+    min-height: 200px;
+    max-height: 400px;
 }
 
 .header-container .wrapper {
     color: white;
 }
 
-.header-container .wrapper h1,
-.header-container .wrapper h2 {
-    width: 100%;
+.wrapper .logo-header {
+    width: 20%;
+    height: 20%;
 }
 
 .header-container .wrapper h3 {
     width: 55%;
-}
-/* ==============
-    MOBILE: Menu
-   ============== */
-
-nav ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
-
-nav a {
-    display: block;
-    margin-bottom: 10px;
-    padding: 15px 0;
-
-    text-align: center;
-    text-decoration: none;
-    font-weight: bold;
-
-    color: white;
-    background: #e44d26;
-}
-
-nav a:hover,
-nav a:visited {
-    color: white;
-}
-
-nav a:hover {
-    text-decoration: underline;
 }
 
 /* ==============
@@ -130,7 +102,7 @@ nav a:hover {
     padding: 30px 0;
 }
 
-.main article h1 {
+.main article .title {
     font-size: 2em;
 }
 
@@ -159,7 +131,14 @@ nav a:hover {
     display: inline;
 }
 
+.wrapper article {
+    vertical-align: top;
+}
 
+.wrapper article header img.top-image {
+    margin-bottom: 5px;
+    width: 48px;
+}
 
 
 
@@ -175,41 +154,21 @@ nav a:hover {
 /* ==========================================================================
    Media Queries
    ========================================================================== */
-
-@media only screen and (min-width: 480px) {
-
-/* ====================
-    INTERMEDIATE: Menu
-   ==================== */
-
-    nav a {
-        float: left;
-        width: 27%;
-        margin: 0 1.7%;
-        padding: 25px 2%;
-        margin-bottom: 0;
+@media only screen and (max-width: 480px) {
+    .header-container .wrapper {
+        text-align: center;
     }
 
-    nav li:first-child a {
-        margin-left: 0;
+    .header-container header .title,.subtitle {
+        display: none;
     }
 
-    nav li:last-child a {
-        margin-right: 0;
-    }
-
-/* ========================
-    INTERMEDIATE: IE Fixes
-   ======================== */
-
-    nav ul li {
-        display: inline;
-    }
-
-    .oldie nav a {
-        margin: 0 0.7%;
+    .header-container header .logo-header {
+        width: 60%;
+        height: 60%;
     }
 }
+
 
 @media only screen and (min-width: 768px) {
 
@@ -217,8 +176,7 @@ nav a:hover {
     WIDE: CSS3 Effects
    ==================== */
 
-    .header-container,
-    .main aside {
+    .header-container {
         -webkit-box-shadow: 0 5px 10px #aaa;
            -moz-box-shadow: 0 5px 10px #aaa;
                 box-shadow: 0 5px 10px #aaa;
@@ -230,11 +188,6 @@ nav a:hover {
 
     .title {
         float: left;
-    }
-
-    nav {
-        float: right;
-        width: 38%;
     }
 
 /* ============
@@ -378,3 +331,6 @@ nav a:hover {
         page-break-after: avoid;
     }
 }
+
+/* font-family: 'Cabin', sans-serif; */
+
